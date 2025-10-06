@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "AlinurBinoy";
-  src: url(./inc/font/Li\ Alinur\ Binoy\ Unicode.ttf);
+  font-family: "Mehdi Ekushey";
+  src: url(./inc/font/Li\ Mehdi\ Ekushey\ Unicode.ttf);
   font-style: normal;
 }
 @font-face {
@@ -15,12 +15,12 @@
   font-style: normal;
 }
 
-:root{
-    --white-color: #ffffff;
-    --accent-color: #dadada;
-    --red-color: red;
-    --black-color: #000000;
-    --gray-color: #aaaaaa;
+:root {
+  --white-color: #ffffff;
+  --accent-color: #dadada;
+  --red-color: red;
+  --black-color: #000000;
+  --gray-color: #aaaaaa;
 }
 
 h1,
@@ -29,17 +29,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "AlinurBinoy";
+  font-family: "Mehdi Ekushey";
 }
-body{
-    font-family: 'ShohidAbuSayedN';
+body {
+  font-family: "ShohidAbuSayedN";
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: var(--black-color);
+a {
+  text-decoration: none;
+  color: var(--black-color);
+  display: inline-block;
+}
+img {
+  width: 100%;
 }
 
 /* Custom pre Class Start  */
@@ -47,27 +51,179 @@ a{
   width: 1280px;
   margin: 0 auto;
 }
-.inline-block{
-    display: inline-block;
+.inline-block {
+  display: inline-block;
 }
-.flex{
-    display: flex;
-    align-self: center;
-    justify-content: inherit;  
-    gap: 10px;  
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  gap: 10px;
 }
-.flex-betwen{
-    justify-content: space-between;
+.flex-betwen {
+  justify-content: space-between;
 }
-.center{
-    text-align: center;
+.justify-center {
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+.center {
+  text-align: center;
 }
 /* Custom pre Class End  */
 
-.header-top-wrap{
-    padding: 30px 0;
-    border-bottom: 1px solid var(--red-color);
+/* main header css start */
+.header-top-wrap {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--red-color);
 }
-.header-top-wrap__logo{
-    width: 300px;
+.left__date {
+  margin-top: 10px;
+}
+.left__hamburg {
+  font-size: 22px;
+}
+.header-top-wrap__logo {
+  width: 300px;
+}
+.icon__list {
+  justify-content: flex-end;
+}
+.manu__list {
+  margin-top: 10px;
+}
+.manu__list li {
+  border-right: 1px solid var(--black-color);
+}
+.manu__list li:nth-child(4) {
+  border: none;
+}
+.manu__list a {
+  padding-right: 10px;
+}
+/* main header css end */
+
+/* header category css start */
+.header-category__list {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--accent-color);
+}
+.header-category__list a {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.header-category__list a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--red-color);
+  opacity: 0;
+  transition: 0.5s all ease-in-out;
+}
+.header-category__list a:hover::after {
+  opacity: 1;
+}
+
+/* highlights section css start*/
+.highlights__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+  border-top: 1px solid var(--black-color);
+  padding: 20px 0;
+}
+.content__left {
+  transition: 0.5s all ease-in-out;
+}
+.content__left p {
+  margin: 20px 0;
+}
+.content__left:hover h2 {
+  color: var(--red-color);
+}
+/* highlights section css end*/
+.lataest--news {
+  margin-top: 20px;
+}
+.lataest-news__writer {
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--black-color);
+}
+.left-side__text {
+  width: 300px;
+}
+.content__right{
+  background: var(--accent-color);
+  padding: 10px;
+  transition: .5s all ease-in-out ;
+}
+.content__right:hover h2{
+  color: var(--red-color);
+}
+
+/* lataest news writer css start */
+.writer__inner {
+  width: 300px;
+  box-shadow: 4px 4px 50px -20px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 4px 4px 50px -20px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 4px 4px 50px -20px rgba(0, 0, 0, 0.22);
+  padding: 2px 8px;
+}
+.writer__photo {
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.writer__photo img {
+  width: 100px;
+}
+/* lataest news writer css end */
+/* lataest news css start */
+
+
+.lataest-news__news {
+  margin-top: 30px;
+}
+
+.post__cart {
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  transition: .5s all ease-in-out;
+}
+.post__cart h3 {
+  margin: 20px 0;
+}
+.post__cart:hover h3{
+  color: var(--red-color);
+}
+/* lataest news css end */
+
+.news--artical__header{
+  margin-top: 30px;
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--red-color);
+}
+.news--artical__header .rignt--angel{
+  color: var(--red-color);
+  font-size: 18px;
+}
+.news--artical__post{
+  margin-top: 30px;
+}
+.news--artical__post{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
 }
