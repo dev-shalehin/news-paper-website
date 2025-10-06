@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AlinurBinoy";
+  src: url(./inc/font/Li\ Alinur\ Binoy\ Unicode.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "ShohidAbuSayedN";
+  src: url(./inc/font/Li\ Shohid\ Abu\ Sayed\ Unicode.ttf);
+  font-style: normal;
+}
+
+:root{
+    --white-color: #ffffff;
+    --accent-color: #dadada;
+    --red-color: red;
+    --black-color: #000000;
+    --gray-color: #aaaaaa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "AlinurBinoy";
+}
+body{
+    font-family: 'ShohidAbuSayedN';
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/* Custom pre Class Start  */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.inline-block{
+    display: inline-block;
+}
+.flex{
+    display: flex;
+    align-self: center;
+    justify-content: inherit;  
+    gap: 10px;  
+}
+.flex-betwen{
+    justify-content: space-between;
+}
+.center{
+    text-align: center;
+}
+/* Custom pre Class End  */
+
+.header-top-wrap{
+    padding: 30px 0;
+    border-bottom: 1px solid var(--red-color);
+}
+.header-top-wrap__logo{
+    width: 300px;
+}
