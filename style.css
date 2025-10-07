@@ -101,9 +101,7 @@ img {
 .manu__list {
   margin-top: 10px;
 }
-.manu__list li {
-  /* border-right: 1px solid var(--black-color); */
-}
+
 .manu__list li:nth-child(4) {
   border: none;
 }
