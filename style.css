@@ -102,13 +102,15 @@ img {
   margin-top: 10px;
 }
 .manu__list li {
-  border-right: 1px solid var(--black-color);
+  /* border-right: 1px solid var(--black-color); */
 }
 .manu__list li:nth-child(4) {
   border: none;
 }
 .manu__list a {
   padding-right: 10px;
+  border-right: 1px solid var(--black-color);
+  line-height: 10px;
 }
 /* main header css end */
 
